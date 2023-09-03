@@ -1,7 +1,8 @@
 <template>
   <div>
     <div class="history">
-      <button @click="$router.go(-1)">&#60; back</button>
+      <button class="button" @click="$router.go(-1)">
+        Back</button>
     </div>
     <div v-if="country">
       <h1>{{ country[0].name.common }}</h1>
